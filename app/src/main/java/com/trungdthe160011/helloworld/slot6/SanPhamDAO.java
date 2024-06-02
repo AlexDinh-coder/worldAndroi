@@ -51,7 +51,7 @@ public class SanPhamDAO {
         while (c.isAfterLast()==false){
             SanPham s = new SanPham();
             s.setMasp(c.getString(0));
-            s.setMasp(c.getString(1));
+            s.setTensp(c.getString(1));
             s.setSoluongsp(c.getInt(2));
             ls.add(s);
             c.moveToNext();
@@ -67,7 +67,7 @@ public class SanPhamDAO {
         while (c.isAfterLast()==false){
             SanPham s = new SanPham();
             s.setMasp(c.getString(0));
-            s.setMasp(c.getString(1));
+            s.setTensp(c.getString(1));
             s.setSoluongsp(c.getInt(2));
             String chuoi = s.getMasp()+"-"+s.getTensp()+"-"+s.getSoluongsp();
             ls.add(chuoi);
