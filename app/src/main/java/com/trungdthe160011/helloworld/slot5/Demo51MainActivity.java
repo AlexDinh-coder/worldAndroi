@@ -29,12 +29,11 @@ public class Demo51MainActivity extends AppCompatActivity {
        // Demo51SqliteHelper helper = new Demo51SqliteHelper(this);
        // SQLiteDatabase db = helper.getReadableDatabase();
         Demo51ProductDAO dao=new Demo51ProductDAO(this);
-       // Demo51Product p =new Demo51Product("1", "San pham 1",123,1);
-//        int kq=dao.insertProduct(p);
+        Demo51Product p =new Demo51Product("3", "San pham 3",4124,1);
         list=dao.getAll();
         adapter = new Demo51Adapter(list,this);
         listView.setAdapter(adapter);
-       // int kq=dao.insertProduct(p);
+        int kq=dao.insertProduct(p);
 
     }
 }
